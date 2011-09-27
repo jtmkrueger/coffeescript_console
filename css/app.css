@@ -1,5 +1,5 @@
 body {
-  background-color: #DFDFDF;
+  margin: 0;
 }
 
 .contatiner {
@@ -22,17 +22,30 @@ body {
   height: 20px;
 }
 
+#console_output {
+  height: 50%;
+  width: 100%;
+  min-height: 20px;
+  outline: none;
+  white-space: pre-wrap;
+  background-color: white;
+  color: black;
+  border: 1px solid #B9B9B9;
+  overflow: scroll;
+  margin: 0;
+}
+
 #source {
   border-width: 1px;
   border-color: #B9B9B9;
   margin: 0;
   padding: 5px;
-  height: 100%;
+  height: 50%;
   width: 50%;
   float: left;
   min-height: 16px;
   white-space: pre-wrap;
-  outline: none; // Prevent the yellow outline on focus
+  outline: none; /*Prevent the yellow outline on focus*/
   -webkit-user-modify: read-write-plaintext-only;
   resize: none;
 }
@@ -40,7 +53,7 @@ body {
 .compiled-container {
   margin: 0;
   padding: 0;
-  min-height: 100%;
+  min-height: 50%;
   width: 50%;
   float: left;
   background-color: #575757;
